@@ -1,0 +1,11 @@
+.root {
+  color: #fff;
+  border: none;
+  background: #f7941d;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.root:focus {
+  outline: none;
+}

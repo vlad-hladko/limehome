@@ -1,0 +1,54 @@
+.root {
+  background: #fff;
+  text-align: left;
+  padding: 1rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: auto;
+  column-gap: 1rem;
+  grid-template-areas:
+    "img title"
+    "img description"
+    "img price"
+    "img hint"
+    "actions actions";
+}
+
+.img {
+  grid-area: img;
+  width: 100%;
+}
+
+.title {
+  font-weight: bold;
+  grid-area: title;
+}
+
+.description {
+  color: #858d94;
+  text-transform: uppercase;
+  grid-area: description;
+}
+
+.price {
+  grid-area: price;
+  font-size: 1.333rem;
+  font-weight: bold;
+}
+
+.hint {
+  color: #858d94;
+  grid-area: hint;
+}
+
+.actions {
+  grid-area: actions;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.actions button {
+  width: 100%;
+  margin-top: 1rem;
+}
